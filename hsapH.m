@@ -38,7 +38,7 @@ function [] = hsapH(a, b, n)
             l  = 1;       % Устанавливаем флаг, что проектор в работе
             
             % Внутренний цикл вычисления проектора
-            while max(abs(p^2 - p), [], 'all') > ip * max(abs(p), [], 'all') && d <= m0/3 
+            while max(abs(p^2 - p), [], 'all') > ip  && d <= m0/3 
                 d = d + 1;
                 for i1 = 1:3
                     S_temp = [-B0; A0];
